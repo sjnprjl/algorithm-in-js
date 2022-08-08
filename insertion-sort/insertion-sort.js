@@ -1,4 +1,3 @@
-
 function insertionSort(arr) {
   const _arr = [...arr];
   let marker = 0;
