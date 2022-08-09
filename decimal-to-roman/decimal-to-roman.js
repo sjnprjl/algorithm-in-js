@@ -44,7 +44,9 @@ function _decimalToRoman(decimal) {
 
 // actual api
 function decimalToRoman(decimal) {
-  const numberInStringFormat = `${decimal}`;
+  const parsed = parseInt(decimal);
+  if (Number.isNaN(parsed)) return false;
+  const numberInStringFormat = `${parsed}`;
   const { length } = numberInStringFormat;
   const toRoman = [];
   for (let i = 0; i < length; ++i) {
