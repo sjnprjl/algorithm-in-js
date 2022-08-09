@@ -16,6 +16,9 @@ const testCases = {
   123: 'CXXIII',
   abc: false,
   0: '',
+  123: 'CXXIII',
+  abc123: false,
+  '123abc123': 'CXXIII',
 };
 
 for (const test in testCases) {
